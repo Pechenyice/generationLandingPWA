@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  color: #1d1c27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
+span {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+}
+
+input {
+  font-family: 'Manrope', sans-serif;
+  color: #1d1c27;
+}
+
+input::placeholder {
+  font-family: 'Manrope', sans-serif;
+  color: #1d1c27;
+}
+
+.main__intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/intro_back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__wrapper {
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+
+.main__heading {
+  position: relative;
+  margin: 100px 0;
+}
+
+.heading__content {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 109px;
+  text-transform: uppercase;
+}
+
+.heading__number {
+  position: absolute;
+  top: 22px;
+  left: calc(-12px - 15px);
+  width: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #00bbb2;
+}
+
+.heading__decoration {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #1d1c27;
+}
+
+.team__content {
+  display: flex;
+  gap: 60px;
+}
+
+.team__layout {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.team__layout_vertical {
+  width: 470px;
+}
+
+.team__layout_horizontal {
+  padding-top: 65px;
+  width: 670px;
+}
+
+.team__member {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+}
+
+.team__member a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 35px;
+  width: 100%;
+  height: 100%;
+}
+
+.team__member_verticalBig {
+  height: 530px;
+  background: url(../assets/member_1.png);
+  background-size: cover;
+}
+
+.team__member_verticalSmall {
+  height: 510px;
+  background: url(../assets/member_2.png);
+  background-size: cover;
+}
+
+.team__member_horizontalBig {
+  height: 350px;
+  background: url(../assets/member_3.png);
+  background-size: cover;
+}
+
+.team__member_horizontalSmall {
+  height: 320px;
+  background: url(../assets/member_4.png);
+  background-size: cover;
+}
+
+.team__member_horizontalMedium {
+  height: 340px;
+  background: url(../assets/member_5.png);
+  background-size: cover;
+}
+
+.team__name {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.team__post {
+  width: 250px;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.team__link {
+  position: relative;
+  margin-top: 30px;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.team__member:hover .team__link {
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.team__member path {
+  stroke: white;
+  transition: 0.3s;
+}
+
+.team__member:hover path {
+  stroke: #00bbb2;
+  transition: 0.3s;
+}
+
+.team__photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+}
+
+.team__photo img {
+  height: 100%;
+  width: auto;
+}
+
+.team__member_verticalSmall .team__photo {
+  right: 17px;
+}
+
+.team__member_horizontalBig .team__photo {
+  right: 53px;
+}
+
+.team__member_horizontalSmall .team__photo {
+  right: 99px;
+}
+
+.team__member_horizontalMedium .team__photo {
+  right: 88px;
+}
