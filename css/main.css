@@ -415,3 +415,153 @@ input::placeholder {
 .projects__linkTextInner {
   width: 175px;
 }
+
+.history__gallery {
+  width: max-content;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 150px;
+  display: flex;
+  gap: 30px;
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gallery_added-1 {
+  width: 228px;
+}
+
+.gallery_added-2 {
+  width: 294px;
+}
+
+.history__content {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.history__decoration {
+  width: 5px;
+  min-height: 100%;
+  background: linear-gradient(180deg, #3520d1 0%, #03aac0 100%);
+}
+
+.history__sticker {
+  width: calc(100% - 5px);
+  height: 100%;
+}
+
+.history__episode {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.history__year {
+  position: sticky;
+  top: 20px;
+  height: max-content;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.history__year_0 {
+  color: #3427d1;
+}
+
+.history__year_1 {
+  color: #2943ce;
+}
+
+.history__year_2 {
+  color: #1282c6;
+}
+
+.history__year_3 {
+  color: #06a5c1;
+}
+
+.history__episode:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+.history__text {
+  width: 570px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.main__footer {
+  padding-top: 75px;
+  padding-bottom: 60px;
+  position: relative;
+  height: 515px;
+  background: url(../assets/footer_back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__links {
+  width: 420px;
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.footer__link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.footer__link:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.footer__media {
+  margin-top: 65px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.media__content {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  font-size: 25px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.media__content:hover {
+  background-color: white;
+  color: var(--color);
+  transition: 0.3s;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7);
+}
