@@ -52,6 +52,10 @@ input::placeholder {
   margin: 100px 0;
 }
 
+.heading_light {
+  color: white;
+}
+
 .heading__content {
   font-weight: bold;
   font-size: 80px;
@@ -71,6 +75,10 @@ input::placeholder {
   color: #00bbb2;
 }
 
+.heading_light .heading__number {
+  color: white;
+}
+
 .heading__decoration {
   position: absolute;
   bottom: 22px;
@@ -80,7 +88,12 @@ input::placeholder {
   background: #1d1c27;
 }
 
+.heading_light .heading__decoration {
+  background: white;
+}
+
 .team__content {
+  margin-bottom: 100px;
   display: flex;
   gap: 60px;
 }
@@ -88,6 +101,7 @@ input::placeholder {
 .team__layout {
   position: relative;
   width: 100%;
+  height: max-content;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
@@ -186,7 +200,7 @@ input::placeholder {
 }
 
 .team__member:hover path {
-  stroke: #00bbb2;
+  stroke: #1d1c27;
   transition: 0.3s;
 }
 
@@ -217,4 +231,187 @@ input::placeholder {
 
 .team__member_horizontalMedium .team__photo {
   right: 88px;
+}
+
+.main__projects {
+  position: relative;
+  background-color: #03aac0;
+  background-image: url(../assets/filter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+  transition: 0.5s;
+}
+
+.main__projects_isHovered0 {
+  background-color: #09bea8;
+  transition: 0.5s;
+}
+
+.main__projects_isHovered1 {
+  background-color: #09bea8;
+  transition: 0.5s;
+}
+
+.main__projects_isHovered2 {
+  background-color: #09bea8;
+  transition: 0.5s;
+}
+
+.main__projects_isHovered3 {
+  background-color: #09bea8;
+  transition: 0.5s;
+}
+
+.main__projects_isHovered4 {
+  background-color: #09bea8;
+  transition: 0.5s;
+}
+
+.main__projects_isHovered5 {
+  background-color: #09bea8;
+  transition: 0.5s;
+}
+
+.projects__decoration {
+  position: absolute;
+  filter: blur(150px);
+  transition: 0.5s;
+}
+
+.projects__decoration {
+  background: #0b36bc;
+}
+
+.projects__decoration_active-0 {
+  background: red;
+}
+
+.projects__decoration_active-1 {
+  background: yellow;
+}
+
+.projects__decoration_active-2 {
+  background: red;
+}
+
+.projects__decoration_active-3 {
+  background: yellow;
+}
+
+.projects__decoration_active-4 {
+  background: red;
+}
+
+.projects__decoration_active-5 {
+  background: yellow;
+}
+
+.projects__decoration_0 {
+  width: 300px;
+  height: 300px;
+  top: 460px;
+  left: 100px;
+}
+
+.projects__content {
+  margin-bottom: 100px;
+}
+
+.projects__project {
+  position: relative;
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  border: 1px solid #1d1c27;
+  color: #1d1c27;
+  transition: 0.5s;
+}
+
+.projects__project a {
+  width: 100%;
+  height: max-content;
+}
+
+.projects__inner {
+  padding: 35px 60px;
+}
+
+.projects__project:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(29, 28, 39, 0);
+  color: white;
+  transition: 0.5s;
+}
+
+.projects__project:not(:first-child) {
+  margin-top: -1px;
+}
+
+.projects__name {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 82px;
+  text-transform: uppercase;
+}
+
+.projects__text {
+  width: 600px;
+  margin-top: 35px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.projects__link {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #1d1c27;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__project:hover .projects__link {
+  border: 1px solid white;
+  background: white;
+  transition: 0.5s;
+}
+
+.projects__project .projects__link path {
+  stroke: #1d1c27;
+  transition: 0.5s;
+}
+
+.projects__project:hover .projects__link path {
+  stroke: #1d1c27;
+  transition: 0.5s;
+}
+
+.projects__linkText {
+  position: absolute;
+  width: 0;
+  right: 75px;
+  overflow: hidden;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.projects__project:hover .projects__linkText {
+  width: 175px;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.projects__linkTextInner {
+  width: 175px;
 }
