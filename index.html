@@ -9,14 +9,49 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/scripts/main.js"></script>
     <script src="js/workers/sw.js"></script>
   </head>
   <body>
     <section id="main">
-      <section class="main__intro"></section>
+      <header class="main__header">
+        <div class="header__logo">
+          <a href="#"><img src="./assets/logo.png" alt="Поколение Z" /></a>
+        </div>
+        <nav class="header__nav">
+          <div class="nav__elem">Кто мы</div>
+          <div class="nav__elem">Наша команда</div>
+          <div class="nav__elem">Проекты</div>
+          <div class="nav__elem">История развития</div>
+          <div class="nav__elem">СМИ о нас</div>
+        </nav>
+        <div class="header__lang">
+          <p class="lang__elem lang__elem_active">ru</p>
+          <p class="lang__elem">en</p>
+        </div>
+      </header>
+      <section class="main__intro">
+        <div class="backNoize backNoize_intro"></div>
+        <div class="backDecorator backDecorator_needAnimation" data-delay="600" style="--width: 1100px;--height: 1100px;--background: radial-gradient(50% 50% at 50% 50%, #00CE7A 14.9%, #00CED2 68.02%, #4C5E9D 100%);--right: -372px;--top: -362px;filter: blur(120px);"></div>
+        <div class="backDecorator backDecorator_needAnimation" data-delay="200" style="--width: 750px;--height: 750px;--background: radial-gradient(50% 50% at 50% 50%, #1A286C 23.75%, #0B36BC 66.98%, #5A7EED 100%);--left: calc(50% - 375px);--top: calc(50% - 375px);filter: blur(120px);"></div>
+        <div class="backDecorator backDecorator_needAnimation" data-delay="600" style="--width: 480px;--height: 480px;--background: #0371C0;--left: 195px;--top: 66px;"></div>
+        <div class="backDecorator backDecorator_needAnimation" data-delay="1000" style="--width: 348px;--height: 348px;--background: #0759F8;--left: 72px;--top: 315px;"></div>
+        <div class="intro__text">
+          <h1 class="intro__name beforeAnimationAppearance" data-delay="500">Поколение Z</h1>
+          <h2 class="intro__extra beforeAnimationAppearance" data-delay="1200">Движение людей будущего</h2>
+        </div>
+        <div class="intro__controls beforeAnimationAppearance" data-delay="2000">
+          <button class="intro__button">Присоединиться</button>
+          <button class="intro__button intro__button_inverted">поддержать</button>
+        </div>
+        <div class="intro__animator">
+          <img src="./assets/intro_animator.png" />
+        </div>
+      </section>
       <section class="main__team">
         <div class="main__wrapper">
           <section class="main__heading heading heading_main">
@@ -28,20 +63,25 @@
             <section class="team__layout team__layout_vertical">
               <section class="team__member team__member_verticalBig">
                 <a href="#">
-                <p class="team__name">Евстигнеев Ринат</h>
-                <p class="team__post">Президент</p>
-                <div class="team__link">
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 9.5L9 1M9 1H1M9 1V9.5" stroke="white"/>
-                    </svg>  
-                </div>
-                <div class="team__photo">
-                  <img src="./assets/member.png" alt="Евстигнеев Ринат" />
+                <div class="backNoize backNoize_team"></div>
+                <div class="team__memberContent">
+                  <p class="team__name">Евстигнеев Ринат</h>
+                  <p class="team__post">Президент</p>
+                  <div class="team__link">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9.5L9 1M9 1H1M9 1V9.5" stroke="white"/>
+                      </svg>  
+                  </div>
+                  <div class="team__photo">
+                    <img src="./assets/member.png" alt="Евстигнеев Ринат" />
+                  </div>
                 </div>
                 </a>
               </section>
               <section class="team__member team__member_verticalSmall">
                 <a href="#">
+                <div class="backNoize backNoize_team"></div>
+                <div class="team__memberContent">
                 <p class="team__name">Евстигнеева Мария</h>
                 <p class="team__post">Вице-Президент</p>
                 <div class="team__link">
@@ -52,12 +92,15 @@
                 <div class="team__photo">
                   <img src="./assets/member.png" alt="Евстигнеева Мария" />
                 </div>
+              </div>
               </a>
               </section>
             </section>
             <section class="team__layout team__layout_horizontal">
               <section class="team__member team__member_horizontalBig">
                 <a href="#">
+                <div class="backNoize backNoize_team"></div>
+                <div class="team__memberContent">
                 <p class="team__name">Дорофеева Наталья</h>
                 <p class="team__post">Генеральный директор</p>
                 <div class="team__link">
@@ -68,10 +111,13 @@
                 <div class="team__photo">
                   <img src="./assets/member.png" alt="Дорофеева Наталья" />
                 </div>
+              </div>
               </a>
               </section>
               <section class="team__member team__member_horizontalSmall">
                 <a href="#">
+                <div class="backNoize backNoize_team"></div>
+                <div class="team__memberContent">
                 <p class="team__name">Суздальцев Роман</h>
                 <p class="team__post">Руководитель регионального отделения в Пермском крае</p>
                 <div class="team__link">
@@ -82,10 +128,13 @@
                 <div class="team__photo">
                   <img src="./assets/member.png" alt="Суздальцев Роман" />
                 </div>
+              </div>
               </a>
               </section>
               <section class="team__member team__member_horizontalMedium">
                 <a href="#">
+                <div class="backNoize backNoize_team"></div>
+                <div class="team__memberContent">
                 <p class="team__name">Белов Михаил</h>
                 <p class="team__post">Волонтёр</p>
                 <div class="team__link">
@@ -96,6 +145,7 @@
                 <div class="team__photo">
                   <img src="./assets/member.png" alt="Белов Михаил" />
                 </div>
+              </div>
               </a>
               </section>
             </section>
@@ -103,6 +153,7 @@
         </div>
       </section>
       <section class="main__projects">
+        <div class="backNoize backNoize_projects"></div>
         <div class="projects__decoration projects__decoration projects__decoration_0"></div>
         <div class="main__wrapper">
           <section class="main__heading heading heading_main heading_light">
@@ -324,45 +375,87 @@
             </div>
           </div>
           <div class="info__donation">
-            <div class="donation__textBlock">
-              <p class="info__heading info__heading_inverted">Поддержать</p>
-              <p class="info__text info__text_inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <div class="backNoize"></div>
+            <div class="backDecorator" style="--width: 463px;--height: 463px;--background: radial-gradient(91.26% 91.26% at 43.95% 53.03%, #0B36BC 0%, #0B36BC 54.55%, #1A286C 100%);--left: -105px;--top: -31px;"></div>
+            <div class="backDecorator" style="--width: 451px;--height: 471px;--background: radial-gradient(50% 50% at 50% 50%, #F3AB09 0%, #D67D34 40.1%, #FF4E57 100%);--right: -133px;--top: -184px;filter: blur(100px);"></div>
+            <div class="donation__content">
+              <div class="donation__textBlock">
+                <p class="info__heading info__heading_inverted">Поддержать</p>
+                <p class="info__text info__text_inverted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              </div>
+              <button class="info__submit info__submit_inverted">Поддержать</button>
             </div>
-            <button class="info__submit info__submit_inverted">Поддержать</button>
           </div>
         </div>
       </section>
       <footer class="main__footer">
-        <div class="main__wrapper">
+        <div class="backNoize"></div>
+        <div class="backDecorator" style="--width: 348px;--height: 348px;--background: #021EBC;--right: 139px;--bottom: -178px;"></div>
+        <div class="backDecorator" style="--width: 480px;--height: 480px;--background: #03AAC0;--right: -116px;--bottom: -61px;"></div>
+        <div class="main__wrapper main__wrapper_footer">
           <div class="footer__logo">
-            <a href="#"><img src="./assets/footerLogo.png" alt="Поколение Z" /></a>
+            <a href="#"><img src="./assets/logo.png" alt="Поколение Z" /></a>
           </div>
-          <div class="footer__links">
-            <div class="footer__link"><a href="#">Главная</a></div>
-            <div class="footer__link"><a href="#">Кто мы</a></div>
-            <div class="footer__link"><a href="#">Проекты</a></div>
-            <div class="footer__link"><a href="#">Цели и ценности</a></div>
-            <div class="footer__link"><a href="#">Что нового</a></div>
-            <div class="footer__link"><a href="#">Контакты</a></div>
+          <div class="footer__content">
+            <div class="footer__text">
+              <div class="footer__links">
+                <div class="footer__link"><a href="#">Кто мы</a></div>
+                <div class="footer__link"><a href="#">Наша команда</a></div>
+                <div class="footer__link"><a href="#">Проекты</a></div>
+                <div class="footer__link"><a href="#">История развития</a></div>
+                <div class="footer__link"><a href="#">СМИ о нас</a></div>
+              </div>
+              <div class="footer__media">
+                <div class="media__content" style="--color: #0077FF;">
+                  <i class="fab fa-vk"></i>
+                </div>
+                <div class="media__content" style="--color: #4267B2;">
+                  <i class="fab fa-facebook-square"></i>
+                </div>
+                <div class="media__content" style="--color: #C63182;">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="media__content" style="--color: #FD3234;">
+                  <i class="fab fa-youtube"></i>
+                </div>
+                <div class="media__content" style="--color: #52B8ED;">
+                  <i class="fab fa-telegram-plane"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer__info">
+              <div class="footer__infoBlock">
+                <p class="footer__infoName">Почта</p>
+                <p class="footer__infoText">office@znewage.org</p>
+              </div>
+              <div class="footer__infoBlock">
+                <p class="footer__infoName">Телефон</p>
+                <p class="footer__infoText">8 800 000 00-00</p>
+              </div>
+              <div class="footer__infoBlock">
+                <p class="footer__infoName">Адрес</p>
+                <p class="footer__infoText">Гатчина, Красноармейский проспект, 50с5</p>
+              </div>
+            </div>
           </div>
-          <div class="footer__media">
-            <div class="media__content" style="--color: #0077FF;">
-              <i class="fab fa-vk"></i>
+          <div class="footer__extra">
+            <div class="footer__meta">
+              <div class="footer__copyright">Поколение Z - 2022 г.</div>
+              <div class="footer__decorator"></div>
+              <div class="footer__docs">
+                <a href="#">
+                  <div class="footer__docsContent">
+                    <p>Документы и Сертификаты</p>
+                    <img src="./assets/link.png" />
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="media__content" style="--color: #4267B2;">
-              <i class="fab fa-facebook-square"></i>
-            </div>
-            <div class="media__content" style="--color: #C63182;">
-              <i class="fab fa-instagram"></i>
-            </div>
-            <div class="media__content" style="--color: #FD3234;">
-              <i class="fab fa-youtube"></i>
-            </div>
-            <div class="media__content" style="--color: #52B8ED;">
-              <i class="fab fa-telegram-plane"></i>
+            <div class="footer__lang">
+              <p class="lang__elem lang__elem_active">ru</p>
+              <p class="lang__elem">en</p>
             </div>
           </div>
-          <div class="footer__copyright">Поколение Z - 2022 г.</div>
         </div>
       </footer>
     </section>
