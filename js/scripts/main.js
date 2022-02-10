@@ -24,4 +24,16 @@ window.addEventListener('load', () => {
       });
     } catch {}
   }
+
+  let needAnimations = document.getElementsByClassName('beforeAnimationAppearance');
+
+  for (let na of needAnimations) {
+    setTimeout(() => na.classList.add('afterAnimationAppearance'), na.dataset.delay);
+  }
+
+  let backDecoratorNeedAnimation = document.getElementsByClassName('backDecorator_needAnimation');
+
+  for (let bdna of backDecoratorNeedAnimation) {
+    setTimeout(() => bdna.classList.add('backDecorator_notNeedAnimation'), bdna.dataset.delay);
+  }
 });
