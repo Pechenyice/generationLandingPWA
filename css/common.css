@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Manrope', sans-serif;
-  color: #1d1c27;
+  color: #160042;
 }
 
 * {
@@ -25,22 +25,26 @@ span {
 
 textarea {
   font-family: 'Manrope', sans-serif;
-  color: #1d1c27;
+  color: #160042;
 }
 
 textarea::placeholder {
   font-family: 'Manrope', sans-serif;
-  color: #1d1c27;
+  color: #160042;
+}
+
+button {
+  font-family: 'Manrope', sans-serif;
 }
 
 input {
   font-family: 'Manrope', sans-serif;
-  color: #1d1c27;
+  color: #160042;
 }
 
 input::placeholder {
   font-family: 'Manrope', sans-serif;
-  color: #1d1c27;
+  color: #160042;
 }
 
 .main__header {
@@ -267,6 +271,16 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.footer__docsContent p {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.footer__docsContent:hover p {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .footer__docsContent img {
