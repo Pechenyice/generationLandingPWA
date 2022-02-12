@@ -6,11 +6,11 @@
 .project__container {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .project__text {
   width: 800px;
-  margin-top: 30px;
 }
 
 .project__name {
@@ -27,10 +27,10 @@
 
 .project__meta {
   font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: rgba(22, 0, 66, 0.5);
-  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 30px;
+  color: #6b7094;
+  margin-bottom: 90px;
 }
 
 .project__image {
@@ -92,7 +92,8 @@
 }
 
 .project__decorator {
-  position: relative;
+  position: sticky;
+  top: 30px;
   max-width: 170px;
   max-height: 210px;
 }
