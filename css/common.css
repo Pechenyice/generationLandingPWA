@@ -59,6 +59,11 @@ input::placeholder {
   z-index: 3;
 }
 
+.main__header_dark {
+  color: #160042;
+  border-color: rgba(22, 0, 66, 0.4);
+}
+
 .header__logo {
   display: flex;
   align-items: center;
@@ -96,6 +101,10 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.header__lang_dark {
+  color: rgba(22, 0, 66, 0.4);
+}
+
 .lang__elem {
   cursor: pointer;
   transition: 0.3s;
@@ -106,8 +115,18 @@ input::placeholder {
   transition: 0.3s;
 }
 
+.header__lang_dark .lang__elem:hover {
+  color: rgba(22, 0, 66, 1);
+  transition: 0.3s;
+}
+
 .lang__elem_active {
   color: white;
+  transition: 0.3s;
+}
+
+.header__lang_dark .lang__elem_active {
+  color: rgba(22, 0, 66, 1);
   transition: 0.3s;
 }
 
@@ -346,15 +365,53 @@ input::placeholder {
   z-index: 2;
 }
 
-.backNoize_projects {
-  opacity: 0.1;
-  z-index: unset;
+.main__wrapper {
+  position: relative;
+  width: 1200px;
+  margin: auto;
 }
 
-.backNoize_team {
-  opacity: 0.1;
+.main__heading {
+  position: relative;
+  margin: 100px 0;
 }
 
-.backNoize_intro {
-  opacity: 0.15;
+.heading_light {
+  color: white;
+}
+
+.heading__content {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 109px;
+  text-transform: uppercase;
+}
+
+.heading__number {
+  position: absolute;
+  top: 22px;
+  left: calc(-12px - 15px);
+  width: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #00bbb2;
+}
+
+.heading_light .heading__number {
+  color: white;
+}
+
+.heading__decoration {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #160042;
+}
+
+.heading_light .heading__decoration {
+  background: white;
 }

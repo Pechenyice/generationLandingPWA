@@ -5,23 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Поколение Z</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/scripts/main.js"></script>
-    <script src="js/scripts/points.js"></script>
-    <script src="js/workers/sw.js"></script>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/scripts/main.js"></script>
+    <script src="/js/scripts/points.js"></script>
+    <script src="/js/workers/sw.js"></script>
   </head>
   <body>
     <section id="main">
       <header class="main__header">
         <div class="header__logo">
-          <a href="#"><img src="./assets/logo.png" alt="Поколение Z" /></a>
+          <a href="#"><img src="/assets/logo.png" alt="Поколение Z" /></a>
         </div>
         <nav class="header__nav">
           <div class="nav__elem">Кто мы</div>
@@ -46,11 +47,21 @@
           <h2 class="intro__extra beforeAnimationAppearance" data-delay="1200">Движение людей будущего</h2>
         </div>
         <div class="intro__controls beforeAnimationAppearance" data-delay="2000">
-          <button class="intro__button">Присоединиться</button>
-          <button class="intro__button intro__button_inverted">поддержать</button>
+          <button class="intro__button"><div class="intro__buttonAnimator" style="--delay: 2.5s"></div><p>Присоединиться</p></button>
+          <button class="intro__button"><div class="intro__buttonAnimator" style="--delay: 4.2s"></div><p>поддержать</p></button>
+        </div>
+        <div class="intro__hint">
+          <svg class="intro__hintElem intro__hintElem_small" style="--delay: 5.5s" width="15" height="15" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.38281" y="22.6184" width="33.3243" height="1.33344" transform="rotate(45 1.38281 22.6184)" fill="white"/>
+            <rect x="23.0547" y="46.1797" width="33.3243" height="1.33535" transform="rotate(-45 23.0547 46.1797)" fill="white"/>
+          </svg>  
+          <svg class="intro__hintElem intro__hintElem_Big" style="--delay: 5.7s" width="30" height="30" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.38281" y="22.6184" width="33.3243" height="1.33344" transform="rotate(45 1.38281 22.6184)" fill="white"/>
+            <rect x="23.0547" y="46.1797" width="33.3243" height="1.33535" transform="rotate(-45 23.0547 46.1797)" fill="white"/>
+          </svg>            
         </div>
         <div class="intro__animator">
-          <img src="./assets/intro_animator.png" />
+          <img src="/assets/intro_animator.png" />
         </div>
       </section>
       <section class="main__team">
@@ -74,7 +85,7 @@
                       </svg>  
                   </div>
                   <div class="team__photo">
-                    <img src="./assets/member.png" alt="Евстигнеев Ринат" />
+                    <img src="/assets/member.png" alt="Евстигнеев Ринат" />
                   </div>
                 </div>
                 </a>
@@ -91,7 +102,7 @@
                     </svg>  
                 </div>
                 <div class="team__photo">
-                  <img src="./assets/member.png" alt="Евстигнеева Мария" />
+                  <img src="/assets/member.png" alt="Евстигнеева Мария" />
                 </div>
               </div>
               </a>
@@ -110,7 +121,7 @@
                     </svg>  
                 </div>
                 <div class="team__photo">
-                  <img src="./assets/member.png" alt="Дорофеева Наталья" />
+                  <img src="/assets/member.png" alt="Дорофеева Наталья" />
                 </div>
               </div>
               </a>
@@ -127,7 +138,7 @@
                     </svg>  
                 </div>
                 <div class="team__photo">
-                  <img src="./assets/member.png" alt="Суздальцев Роман" />
+                  <img src="/assets/member.png" alt="Суздальцев Роман" />
                 </div>
               </div>
               </a>
@@ -144,7 +155,7 @@
                     </svg>  
                 </div>
                 <div class="team__photo">
-                  <img src="./assets/member.png" alt="Белов Михаил" />
+                  <img src="/assets/member.png" alt="Белов Михаил" />
                 </div>
               </div>
               </a>
@@ -295,18 +306,18 @@
         </div>
         <section class="history__gallery">
           <div class="gallery__column">
-            <img src="./assets/gallery/0.png" />
+            <img src="/assets/gallery/0.png" />
           </div>
           <div class="gallery__column">
-            <img src="./assets/gallery/1.png" />
-            <img src="./assets/gallery/2.png" class="gallery_added-1" />
+            <img src="/assets/gallery/1.png" />
+            <img src="/assets/gallery/2.png" class="gallery_added-1" />
           </div>
           <div class="gallery__column">
-            <img src="./assets/gallery/3.png" />
-            <img src="./assets/gallery/4.png"  class="gallery_added-2" />
+            <img src="/assets/gallery/3.png" />
+            <img src="/assets/gallery/4.png"  class="gallery_added-2" />
           </div>
           <div class="gallery__column">
-            <img src="./assets/gallery/5.png" />
+            <img src="/assets/gallery/5.png" />
           </div>
         </section>
       </section>
@@ -358,7 +369,7 @@
                   </div>
                 </div>
               </div>
-              <div class="points__imageBlock"><img src="./assets/points_top.png" /></div>
+              <div class="points__imageBlock"><img src="/assets/points_top.png" /></div>
             </div>
             <div class="points__block points__block_second points__block_alternate">
               <div class="points__textBlock">
@@ -396,7 +407,7 @@
                   </div>
                 </div>
               </div>
-              <div class="points__imageBlock"><img src="./assets/points_bottom.png" /></div>
+              <div class="points__imageBlock"><img src="/assets/points_bottom.png" /></div>
             </div>
           </section>
         </div>
@@ -487,7 +498,7 @@
         <div class="backDecorator" style="--width: 480px;--height: 480px;--background: #03AAC0;--right: -116px;--bottom: -61px;"></div>
         <div class="main__wrapper main__wrapper_footer">
           <div class="footer__logo">
-            <a href="#"><img src="./assets/logo.png" alt="Поколение Z" /></a>
+            <a href="#"><img src="/assets/logo.png" alt="Поколение Z" /></a>
           </div>
           <div class="footer__content">
             <div class="footer__text">
@@ -539,7 +550,7 @@
                 <a href="#">
                   <div class="footer__docsContent">
                     <p>Документы и Сертификаты</p>
-                    <img src="./assets/link.png" />
+                    <img src="/assets/link.png" />
                   </div>
                 </a>
               </div>
