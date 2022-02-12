@@ -102,3 +102,90 @@
   max-width: 100%;
   max-height: 100%;
 }
+
+@media screen and (max-width: 1279px) {
+  .main__project {
+    padding-top: 120px;
+  }
+
+  .project__name {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .project__container {
+    margin-top: 40px;
+  }
+
+  .project__contentBox {
+    margin-top: 20px;
+  }
+
+  .project__text {
+    width: 580px;
+  }
+
+  .project__decorator {
+    max-width: 100px;
+    max-height: 120px;
+  }
+
+  .project__meta {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .project__paragraph {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .project__image {
+    margin-bottom: 40px;
+  }
+
+  .project__footer {
+    padding-top: 30px;
+  }
+
+  .social__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .social__hintContent {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__project {
+    padding-bottom: 80px;
+  }
+
+  .project__decorator {
+    display: none;
+  }
+
+  .project__text {
+    width: 100%;
+  }
+
+  .project__meta {
+    margin-bottom: 40px;
+  }
+
+  .project__name {
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  .project__meta {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

@@ -12,7 +12,7 @@
   position: relative;
   width: 100%;
   height: 615px;
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 60px 80px;
   background: linear-gradient(114.18deg, #09be9b -45.47%, #199dba 39.67%, #1a4b9d 176.64%);
 }
@@ -145,6 +145,13 @@
   width: 300px;
   color: white;
   cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.container__block_active {
+  opacity: 1;
+  transition: 0.3s;
 }
 
 .container__block_green {
@@ -302,4 +309,113 @@
 .development__content {
   position: relative;
   z-index: 3;
+}
+
+@media screen and (max-width: 1279px) {
+  .main__summary {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .summary__wrapper {
+    height: 380px;
+    padding: 40px;
+  }
+
+  .summary__name {
+    width: 570px;
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .summary__meta {
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .summary__hintBlock {
+    width: 200px;
+  }
+
+  .summary__hintName {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .summary__hintContent {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .summary__photo {
+    right: 0;
+    width: 290px;
+  }
+
+  .container__year {
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+
+  .container__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .timeline__controls {
+    margin-top: 40px;
+  }
+
+  .timeline__button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .main__wrapper_controls {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__summary {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .summary__wrapper {
+    height: 650px;
+    padding: 30px 20px;
+  }
+
+  .summary__textBlock {
+    width: 100%;
+  }
+
+  .summary__name {
+    width: 100%;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .summary__meta {
+    margin-top: 30px;
+  }
+
+  .summary__hintBlock {
+    width: 100%;
+  }
+
+  .summary__photo {
+    bottom: 0;
+    top: unset;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .summary__photo img {
+  }
 }

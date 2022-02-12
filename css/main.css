@@ -1497,6 +1497,7 @@ img.gallery_added-2 {
   }
 
   .points__imageBlock {
+    width: 100%;
     margin-top: 40px;
   }
 
@@ -1559,5 +1560,13 @@ img.gallery_added-2 {
   .info__submit_inverted {
     width: 100%;
     margin-top: 25px;
+  }
+
+  .main__projects {
+    overflow-x: hidden;
+  }
+
+  .main__points {
+    overflow-x: hidden;
   }
 }
