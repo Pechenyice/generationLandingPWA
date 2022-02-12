@@ -1,0 +1,352 @@
+.main__summary {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.summary__content {
+  width: 100%;
+  margin: auto;
+}
+
+.summary__back {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.summary__back:hover .back__text {
+  transform: translateX(-15px);
+  transition: 0.3s;
+}
+
+.summary__back:hover .back__button {
+  background: #00bbb2;
+  transition: 0.3s;
+}
+
+.summary__back .back__button path {
+  stroke: #00bbb2;
+  transition: 0.3s;
+}
+
+.summary__back:hover .back__button path {
+  stroke: white;
+  transition: 0.3s;
+}
+
+.back__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #00bbb2;
+  transition: 0.3s;
+}
+
+.back__button {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #00bbb2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.summary__wrapper {
+  position: relative;
+  width: 100%;
+  height: 615px;
+  margin-top: 30px;
+  padding: 60px 80px;
+  background: linear-gradient(114.18deg, #09be9b -45.47%, #199dba 39.67%, #1a4b9d 176.64%);
+}
+
+.backNoize_summary {
+  opacity: 0.1;
+}
+
+.summary__textBlock {
+  position: relative;
+  z-index: 3;
+  width: 570px;
+}
+
+.summary__name {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 82px;
+  color: #ffffff;
+}
+
+.summary__meta {
+  margin-top: 80px;
+  display: flex;
+  column-gap: 70px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.summary__hintBlock {
+  width: 250px;
+}
+
+.summary__hintName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.summary__hintContent {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.summary__hintContent_link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.summary__hintContent span {
+  margin-left: 10px;
+}
+
+.summary__photo {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  width: 480px;
+  height: 100%;
+  z-index: 3;
+}
+
+.summary__photo img {
+  height: 100%;
+  width: auto;
+}
+
+.main__education {
+  position: relative;
+  background: #03aac0;
+  overflow: hidden;
+}
+
+.main__wrapper_education {
+  position: relative;
+  z-index: 3;
+}
+
+.education__content {
+  position: relative;
+  z-index: 3;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  height: max-content;
+}
+
+.timeline__line {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 110%;
+  height: 5px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 255, 255, 0.5) 16.98%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.timeline_dark .timeline__line {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(53, 32, 209, 0.6) 0%,
+    rgba(3, 170, 192, 0.6) 65.94%
+  );
+}
+
+.timeline__container {
+  margin-left: calc(50vw - 150px);
+  width: max-content;
+  display: flex;
+  gap: 80px;
+  transition: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0.1s;
+}
+
+.container__block {
+  position: relative;
+  width: 300px;
+  color: white;
+}
+
+.container__block_green {
+  color: #00bbb2;
+}
+
+.container__block_blue {
+  color: #2943ce;
+}
+
+.container__block_active .container__decorator {
+  border: 10px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+.container__decorator {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.container__block_green .container__decorator {
+  background: white;
+  border: 10px solid rgba(0, 187, 178, 0.7);
+  box-shadow: 0 0 15px rgba(0, 187, 178, 0);
+}
+
+.container__block_green.container__block_active .container__decorator {
+  border: 10px solid rgba(0, 187, 178, 1);
+  box-shadow: 0 0 15px rgba(0, 187, 178, 1);
+  transition: 0.3s;
+}
+
+.container__block_blue .container__decorator {
+  background: white;
+  border: 10px solid rgba(41, 67, 206, 0.7);
+  box-shadow: 0 0 15px rgba(41, 67, 206, 0);
+}
+
+.container__block_blue.container__block_active .container__decorator {
+  border: 10px solid rgba(41, 67, 206, 1);
+  box-shadow: 0 0 15px rgba(41, 67, 206, 1);
+  transition: 0.3s;
+}
+
+.container__year {
+  width: 100%;
+  margin-top: 23px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 55px;
+  color: inherit;
+  text-align: center;
+}
+
+.container__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+.container__block_green .container__text {
+  color: #6b7094;
+}
+
+.container__block_blue .container__text {
+  color: #6b7094;
+}
+
+.backNoize_education {
+  opacity: 0.1;
+}
+
+.timeline__controls {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px;
+}
+
+.main__wrapper_controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+
+.timeline__button {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls_dark .timeline__button {
+  border: 1px solid #160042;
+}
+
+.timeline__button:not(.timeline__button_disabled):hover {
+  background: white;
+  transition: 0.3s;
+}
+
+.controls_dark .timeline__button:not(.timeline__button_disabled):hover {
+  background: #160042;
+  transition: 0.3s;
+}
+
+.timeline__button path {
+  stroke: white;
+  transition: 0.3s;
+}
+
+.timeline__button:not(.timeline__button_disabled):hover path {
+  stroke: #00bbb2;
+  transition: 0.3s;
+}
+
+.controls_dark .timeline__button path {
+  stroke: #160042;
+  transition: 0.3s;
+}
+
+.controls_dark .timeline__button:not(.timeline__button_disabled):hover path {
+  stroke: white;
+  transition: 0.3s;
+}
+
+.timeline__button_disabled {
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.main__development {
+  overflow: hidden;
+}
+
+.main__wrapper_development {
+  position: relative;
+  z-index: 3;
+}
+
+.development__content {
+  position: relative;
+  z-index: 3;
+}
