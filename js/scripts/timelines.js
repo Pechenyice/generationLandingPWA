@@ -12,7 +12,13 @@ window.addEventListener('load', () => {
   function constructTimeline(wrapper, controlsWrapper) {
     let active = 0;
     let elems = wrapper.getElementsByClassName('container__block');
-    console.log(elems);
+
+    for (let index in elems) {
+      try {
+        elems[index].addEventListener('click', () => switchPeriod(index));
+      } catch {}
+    }
+
     let less = controlsWrapper.getElementsByClassName('timeline__button_less')[0];
     let more = controlsWrapper.getElementsByClassName('timeline__button_more')[0];
     let timeline = wrapper.getElementsByClassName('timeline__container')[0];

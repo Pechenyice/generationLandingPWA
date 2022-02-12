@@ -152,7 +152,13 @@ input::placeholder {
 .nav__elem:hover {
   cursor: pointer;
   transition: 0.3s;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main__header_dark .nav__elem:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  color: rgba(22, 0, 66, 0.5);
 }
 
 .main__footer {
@@ -414,4 +420,57 @@ input::placeholder {
 
 .heading_light .heading__decoration {
   background: white;
+}
+
+.back {
+  width: max-content;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.back__link {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.back:hover .back__text {
+  transform: translateX(-15px);
+  transition: 0.3s;
+}
+
+.back:hover .back__button {
+  background: #00bbb2;
+  transition: 0.3s;
+}
+
+.back .back__button path {
+  stroke: #00bbb2;
+  transition: 0.3s;
+}
+
+.back:hover .back__button path {
+  stroke: white;
+  transition: 0.3s;
+}
+
+.back__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #00bbb2;
+  transition: 0.3s;
+}
+
+.back__button {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #00bbb2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 }
