@@ -17,6 +17,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="./../css/common.css" />
     <link rel="stylesheet" href="./../css/members.css" />
+    <script src="./../js/scripts/burger.js"></script>
     <script src="./../js/scripts/timelines.js"></script>
     <script src="./../js/workers/sw.js"></script>
   </head>
@@ -38,6 +39,99 @@
           <p class="lang__elem">en</p>
         </div>
       </header>
+      <div class="main__mobileHeader main__mobileHeader_dark">
+        <div class="main__wrapper main__wrapper_mobileHeader">
+          <div class="mobileHeader__logo">
+            <a href="#"><img src="./../assets/logo_dark.png" alt="Поколение Z" /></a>
+          </div>
+          <div class="mobileHeader__burger burger__opener">
+            <svg
+              width="30"
+              height="20"
+              viewBox="0 0 30 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="30" height="2" fill="white" />
+              <rect y="9" width="30" height="2" fill="white" />
+              <rect y="18" width="30" height="2" fill="white" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="main__burger">
+        <div class="burger__content">
+          <div class="backNoize backNoize_intro"></div>
+          <div
+            class="backDecorator"
+            style="
+              --width: 265px;
+              --height: 265px;
+              --background: #021ebc;
+              --right: 155px;
+              --top: -66px;
+            "
+          ></div>
+          <div
+            class="backDecorator"
+            style="
+              --width: 365px;
+              --height: 365px;
+              --background: #03aac0;
+              --right: -39px;
+              --bottom: 23px;
+            "
+          ></div>
+          <div class="main__mobileHeader mobileHeader_burger">
+            <div class="main__wrapper main__wrapper_mobileHeader">
+              <div class="mobileHeader__logo">
+                <a href="#"><img src="./../assets/logo.png" alt="Поколение Z" /></a>
+              </div>
+              <div class="mobileHeader__burger burger__closer">
+                <svg
+                  width="24"
+                  height="23"
+                  viewBox="0 0 24 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.6875"
+                    y="21.2134"
+                    width="30"
+                    height="2"
+                    transform="rotate(-45 0.6875 21.2134)"
+                    fill="white"
+                  />
+                  <rect
+                    width="30"
+                    height="2"
+                    transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.627 21.5273)"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="main__wrapper">
+            <div class="burger__texts">
+              <div class="burger__text">Наша команда</div>
+              <div class="burger__text">Проекты</div>
+              <div class="burger__text">История развития</div>
+              <div class="burger__text">Цели и ценности</div>
+              <div class="burger__text">СМИ о нас</div>
+            </div>
+          </div>
+          <div class="burger__langs">
+            <div class="main__wrapper">
+              <div class="header__lang">
+                <p class="lang__elem lang__elem_active">ru</p>
+                <p class="lang__elem">en</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="main__summary">
         <div class="main__wrapper">
           <div class="summary__content">
