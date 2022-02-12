@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/scripts/main.js"></script>
     <script src="./js/scripts/points.js"></script>
+    <script src="./js/scripts/burger.js"></script>
     <script src="./js/workers/sw.js"></script>
   </head>
   <body>
@@ -36,6 +37,57 @@
           <p class="lang__elem">en</p>
         </div>
       </header>
+      <div class="main__mobileHeader">
+        <div class="main__wrapper main__wrapper_mobileHeader">
+          <div class="mobileHeader__logo">
+            <a href="#"><img src="./assets/logo.png" alt="Поколение Z" /></a>
+          </div>
+          <div class="mobileHeader__burger burger__opener">
+            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="30" height="2" fill="white"/>
+              <rect y="9" width="30" height="2" fill="white"/>
+              <rect y="18" width="30" height="2" fill="white"/>
+            </svg>              
+          </div>
+        </div>
+      </div>
+      <div class="main__burger">
+        <div class="burger__content">
+          <div class="backNoize backNoize_intro"></div>
+          <div class="backDecorator" style="--width: 265px;--height: 265px;--background: #021EBC;--right: 155px;--top: -66px;"></div>
+          <div class="backDecorator" style="--width: 365px;--height: 365px;--background: #03AAC0;--right: -39px;--bottom: 23px;"></div>
+          <div class="main__mobileHeader mobileHeader_burger">
+            <div class="main__wrapper main__wrapper_mobileHeader">
+              <div class="mobileHeader__logo">
+                <a href="#"><img src="./assets/logo.png" alt="Поколение Z" /></a>
+              </div>
+              <div class="mobileHeader__burger burger__closer">
+                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.6875" y="21.2134" width="30" height="2" transform="rotate(-45 0.6875 21.2134)" fill="white"/>
+                  <rect width="30" height="2" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 22.627 21.5273)" fill="white"/>
+                </svg>                             
+              </div>
+            </div>
+          </div>
+          <div class="main__wrapper">
+            <div class="burger__texts">
+              <div class="burger__text">Наша команда</div>
+              <div class="burger__text">Проекты</div>
+              <div class="burger__text">История развития</div>
+              <div class="burger__text">Цели и ценности</div>
+              <div class="burger__text">СМИ о нас</div>
+            </div>
+          </div>  
+          <div class="burger__langs">
+            <div class="main__wrapper">
+              <div class="header__lang">
+                <p class="lang__elem lang__elem_active">ru</p>
+                <p class="lang__elem">en</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="main__intro">
         <div class="backNoize backNoize_intro"></div>
         <div class="backDecorator backDecorator_needAnimation" data-delay="600" style="--width: 1100px;--height: 1100px;--background: radial-gradient(50% 50% at 50% 50%, #00CE7A 14.9%, #00CED2 68.02%, #4C5E9D 100%);--right: -372px;--top: -362px;filter: blur(120px);"></div>
@@ -380,7 +432,7 @@
                     <div class="gallery__controlCell">Общество</div>
                     <div class="gallery__controlCell">Экономика</div>
                   </div>
-                  <div class="gallery__contentBlock">
+                  <div class="gallery__contentBlock gallery__contentBlock_bottom">
                     Развитие новейших технологий, тотальное перестроение рынка труда - серьезные вызовы, с которыми экономика столкнется в ближайшее время. Мы уверены, что современное молодое поколение способно внести свой вклад в экономику будущего, создавая передовые технологические (и не только) стартапы, продвигая науку, способствуя развитию экономики знаний. 
                     <br />
                     <br />
@@ -407,7 +459,7 @@
                   </div>
                 </div>
               </div>
-              <div class="points__imageBlock"><img src="./assets/points_bottom.png" /></div>
+              <div class="points__imageBlock points__imageBlock_bottom"><img src="./assets/points_bottom.png" /></div>
             </div>
           </section>
         </div>
@@ -437,27 +489,27 @@
                   <div class="news__decorator"></div>
                   <p class="news__source">gorod-plus.tv</p>
                 </div>
-                <h5 class="news__name">Новое мобильное приложение поможет в саморазвитии Новое мобильное приложение поможет в саморазвитии</h5>
-              </div>
-            </a>
-            <a href="#">
-              <div class="news__block">
-                <div class="news__meta">
-                  <p class="news__date">23 апреля, 2019</p>
-                  <div class="news__decorator"></div>
-                  <p class="news__source">gorod-plus.tv</p>
-                </div>
-                <h5 class="news__name">Новое мобильное приложение поможет в саморазвитии Новое мобильное приложение поможет в саморазвитии</h5>
-              </div>
-            </a>
-            <a href="#">
-              <div class="news__block">
-                <div class="news__meta">
-                  <p class="news__date">23 апреля, 2019</p>
-                  <div class="news__decorator"></div>
-                  <p class="news__source">gorod-plus.tv</p>
-                </div>
                 <h5 class="news__name">Новое мобильное приложение поможет в саморазвитии</h5>
+              </div>
+            </a>
+            <a href="#">
+              <div class="news__block">
+                <div class="news__meta">
+                  <p class="news__date">23 апреля, 2019</p>
+                  <div class="news__decorator"></div>
+                  <p class="news__source">gorod-plus.tv</p>
+                </div>
+                <h5 class="news__name">Новое мобильное приложение поможет в саморазвитии Новое мобильное приложение поможет в саморазвитии</h5>
+              </div>
+            </a>
+            <a href="#">
+              <div class="news__block">
+                <div class="news__meta">
+                  <p class="news__date">23 апреля, 2019</p>
+                  <div class="news__decorator"></div>
+                  <p class="news__source">gorod-plus.tv</p>
+                </div>
+                <h5 class="news__name">Новое мобильное приложение поможет в саморазвитии Новое мобильное приложение поможет в саморазвитии</h5>
               </div>
             </a>
           </section>
